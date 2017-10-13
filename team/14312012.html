@@ -24,8 +24,6 @@ Information Management Group
 </title>
 
 
-<meta name="thumbnail" property="og:image" content="http://img.channeli.in/static/images/img_website/img_snap.png"/>
-<meta name="description" property="og:description" content="We are a student group, which cultivates technical innovation and drives the development of software systems and niche applications which empathize with the residents of IIT Roorkee."/>
 
 
 
@@ -44,9 +42,7 @@ Information Management Group
 <link rel="stylesheet" href="/static//materialize/css/materialize.min.css">
 <link rel="stylesheet" href="/static/css/img_website/base.css" />
 
-<link rel="stylesheet" href="/static/css/img_website/landing.css">
-<link rel="stylesheet" href="/static/css/img_website/blog.css">
-<link rel="stylesheet" href="/static/css/img_website/project.css">
+<link rel = stylesheet href = '/static/css/img_website/profile.css'>
 
 
 <script src="/static/jquery/jquery.min.js" type="text/javascript"></script>
@@ -69,34 +65,30 @@ $(document).scroll(function(){
 
 <script src="/static/materialize/js/materialize.min.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 <script>
-	$(document).ready(function(){
-		$('.carousel').carousel();
-		$('.footer-fix').hide();
-		$('.image-box-landing').css({'height': $('.image-box-landing').width() + 'px'});
-		$(window).resize(function(){
-			$('.image-box-landing').css({'height': $('.image-box-landing').width() + 'px'});
-		})
-		var a = 50;
-	    var b = 1;
-	    $(document).scroll(function(){
-	     	if($(this).scrollTop() > a){
-	        	$('.top-nav').removeClass('landing');
-	     	} 
-	     	else {
-	       		$('.top-nav').addClass('landing');
-	     	}
-	   });
-		$('.top-nav').addClass('landing');
-	});
-	function prev()	{
-		$('.carousel').carousel('prev');
-	}
-	function nex()	{
-		$('.carousel').carousel('next');
-	}
-</script>
+  function edit_profile()
+  {
 
+    if ("team"=="Alumni")
+    {
+      window.open("/add_member", "_blank")}
+      else
+        { window.open("/add_member","_blank")}
+
+    }
+    function add_blog()
+    {
+     window.open("/blog/add")
+   }
+   function add_project()
+   {
+     window.open("/project/add")
+   }
+
+ </script>
+ 
 </head>
 <body>
 
@@ -127,114 +119,111 @@ $(document).scroll(function(){
 
 
 
-<body background-color="#fff">
+ <body background="#afafaf">
 
-	<div class="row main-image center-flex">
-		<div class="container">
-		<div class="row m-t-mobile">
-			<div class="col l6">
-					<div>	
-							<h1 class="main-title ">Playing with </h1>
-					</div>
-					<div>
-							<h1 class="main-title ">new ideas </h1>
-					</div>
-					<p class="content-main">
-          The group flaunts a wide spectrum of projects, influencing over eight thousand lives on campus.
-					</p>
-			</div>
-			<div class="col s12 m12 l6 center show-on-medium-and-up">
-					<img class="bg-image" width="700" src="/static/images/img_website/bg-002.png">
-			</div>
-		</div>
-		</div>
-	</div>
+   <div class = 'row w-100 m-t-a'>
+    <div class = 'col s12 l8 m8 offset-l2 offset-m2 center  p-80'>
+      <div class="profile-pic-div-overlap">
+        <div class="profile-pic-div">
+          <img class = 'profile_pic img-responsive' src = "/media/img_website/team/10404139_561385707336889_6911403782137109295_n.jpg">
+        </div>
+      </div>
+      <div class = "person-name">Karan Bedi</div>
+      <div class='person-batch'></div>
+      <div class="web-links">
+        
+        <a href = "https://github.com/kb0304" target = "_blank">
+         
+                           <!-- <img src="/static/images/img_website/social-icons/icon-github.png">-->
+                            <i class="fa fa-github-square fa-2x web-link-icon"></i>
+                            
+        </a>
+        <!-- <a href = "https://github.com/kb0304" target = "_blank">
+          
+          <a class="text-lighten-3" href="https://github.com/kb0304"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+          
+        </a> -->
+        
+        <a href = "https://www.linkedin.com/in/karanbedi01/" target = "_blank">
+         
+                            <!--<img src="/static/images/img_website/social-icons/icon-linkedin.png">-->
+                            <i class="fa fa-linkedin-square fa-2x web-link-icon"></i>
+                            
+        </a>
+        <!-- <a href = "https://www.linkedin.com/in/karanbedi01/" target = "_blank">
+          
+          <a class="text-lighten-3" href="https://www.linkedin.com/in/karanbedi01/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          
+        </a> -->
+        
+        <a href = "https://www.facebook.com/kb0304" target = "_blank">
+         
+                            <!--<img src="/static/images/img_website/social-icons/icon-facebook.png">-->
+                            <i class="fa fa-facebook-square fa-2x web-link-icon"></i>
+                            
+        </a>
+        <!-- <a href = "https://www.facebook.com/kb0304" target = "_blank">
+          
+        </a> -->
+        
+      </div>
+      <hr class='profile-hr'>
+      <p class='person-desc'>
+        &lt;life&gt;
 
-	<div class=" container ">
-		<div class=" row block">
-		<div class="col s12 l12 m12 center">
-			<div class="title">
-			Projects
-			</div>
-			<hr class="heading-bottom">
-		</div>
-		</div>
+&lt;del&gt;System&lt;/del&gt;
+&lt;!-- Dn knw why people follow it--&gt;
 
-		<div class=" row block">
-			<div class="col s12 l12 m12 center block-image">
-				<img class='project-img' src="/static/images/img_website/landing/Projects.png">		
-			</div>
-			<div class="col s12 l6 m6 center ">
-			</div>
-		</div>
-		<div class="row block">
-		
-		<div class=" row block ">
-	
-		<div class="col s10 l4 m4 offset-s1 center">
-			<a class="custom-tile" href="/project/LecTut---Android" style='background-image: url("/static/images/img_website/1.png")'>	
-					<h1 class="project-tile-title">LecTut - Android</h1>
-					<p class="project-detail-short">Developed for the R-Land junta to help them carve their path to success.</p>
-			</a>
-		</div>
-	
-		<div class="col s10 l4 m4 offset-s1 center">
-			<a class="custom-tile" href="/project/NoticeBoard" style='background-image: url("/static/images/img_website/2.png")'>	
-					<h1 class="project-tile-title">NoticeBoard</h1>
-					<p class="project-detail-short">The e-NoticeBoard of IIT Roorkee. Also available on Android.</p>
-			</a>
-		</div>
-	
-		<div class="col s10 l4 m4 offset-s1 center">
-			<a class="custom-tile" href="/project/Forminator" style='background-image: url("/static/images/img_website/3.png")'>	
-					<h1 class="project-tile-title">Forminator</h1>
-					<p class="project-detail-short">A multi-featured survey tool for IIT Roorkee.</p>
-			</a>
-		</div>
+Explore your path :)
 
-		</div>
-    <div class="col s12 l12 m12 center" >
-			
-			<div class="custom-btn"style="margin-top:0px;">
-					<a href="/project">View All</a>
-				</div>
-		</div>
-		</div>
+&lt;/life&gt; <br> 
+      </p>
 
-		</div>
-    
-	</div>
-	<div class=" " style="padding:96px; background-color: #f0f0f0;">
-		<div class=" row block">
-		<div class="col s12 l12 m12 center">
-			<div class="title">
-			Blogs
-			</div>
-			<hr class="heading-bottom">
-		</div>
-		</div>
 
-		<div class=" row block">
-			<div class="col s12 l6 m6 center block-image">
-				<img class='blog-img' src="/static/images/img_website/landing/Blogs.png">		
-			</div>
-			<div class="col s12 l6 m6 center ">
-				
-				<div class="blog-content" style="text-align: left;">
-Ken the ins and outs of life and moil at IMG.<br> Find answers to the whats, the whys and the hows.
-				</div>
-			</div>
-			
-		</div>
-<div class="col s12 l12 m12 center">
-			
-			<div class="custom-btn">
-					<a href="/blog">Read</a>
-				</div>
-		</div>
-	</div>
 
+      
+      
+
+
+
+      
+      <div class="blog-list">
+        <ol id="staggered-blog">
+          
+        </ol>
+      </div>
+
+      
+      <div class="project-list">
+        <ol id="staggered-project">
+          
+        </ol>
+      </div>
+
+      
+
+    </div>
+  </div>
 </body>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.view-blogs').click(function(){
+      $('.blog-list').show();
+      $('.project-list').hide();
+      $('.custom-btn').removeClass('active');
+      $(this).addClass('active');
+      $('.project-list ol li').css({'opacity':0, 'transform':'translateX(0)'});
+
+    });
+    $('.view-projects').click(function(){
+      $('.blog-list ol li').css({'opacity':0, 'transform':'translateX(0)'});  
+      $('.blog-list').hide();
+      $('.project-list').show();
+      $('.custom-btn').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+</script>
 
 <div class = "footer-fix"></div>
 <div class='footer-fixed'></div>
