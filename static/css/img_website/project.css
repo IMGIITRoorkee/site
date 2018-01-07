@@ -1,0 +1,195 @@
+
+@font-face {
+  font-family: "Nunitosans";
+  src: url(../../fonts/nunitosans/NunitoSans-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NunitosansEB";
+  src: url(../../fonts/nunitosans/NunitoSans-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NunitosansSB";
+  src: url(../../fonts/nunitosans/NunitoSans-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NunitosansB";
+  src: url(../../fonts/nunitosans/NunitoSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NunitosansR";
+  src: url(../../fonts/nunitosans/NunitoSans-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Expressa-Serial-Regular";
+  src: url(../../fonts/Expressa-Serial-Regular.ttf) format("truetype");
+}
+
+body{
+	background:#fff;
+}
+a:hover{
+	text-decoration: none;
+	opacity: 0.8;
+}
+.hidden-text{
+	opacity: 0;
+}
+
+
+.image-box .hover{
+	position: absolute;
+	color:red;
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	display: none;
+	align-items: center;
+	justify-content: center;/*
+	background-color: rgba(0,0,0,0.6);*/
+	transition: all 0.3s;
+}
+.hover-anchor{
+	/*margin: 0 auto;*/
+	margin-top: 210px;
+	font-family: "Nunitosans" !important;
+    font-size: 16px;
+    color:#50E3C2;
+    text-transform: uppercase;
+}
+.hover-anchor:hover{
+	text-decoration: none;
+	color:white;
+}
+.image-box img{
+	width: 100%;
+	padding: 0px;
+}
+
+
+.image-box{
+	position: relative;
+    overflow: hidden !important;
+    width: 100%;
+    height: auto;
+    margin:auto;
+    padding: 0px 12px;
+}
+.box{
+	padding: 10px !important;
+	/*margin: auto !important;*/
+	/*min-width: 150px !important;*/
+}
+.title a{
+	font-family: "NunitosansEB";
+	color: #636363;
+	font-size: 20px;
+}
+
+.title{
+	text-align: center;
+}
+.short-desc{
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	line-height: 1.3;
+	color:#9B9B9B !important;
+	padding: 0 30px;
+    line-height: 1.5;
+}
+.short-desc a{
+	color: #4a4a4a;
+	font-family: "NunitosansSB";
+	font-size: 20px;
+	text-decoration: none;
+}
+.short-desc h4{
+  margin-bottom:0px;
+  margin-top:10px;
+}
+.card a:hover{
+	opacity: 0.7;
+}
+.centered-by-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center;
+}
+.centered-by-flex * {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+
+}
+div.half-div {
+	position: absolute;
+	display: none;
+    height: 300px;
+    width: 150px;
+    background: rgba(0,0,0,0.2);
+    top: 0;
+    right: 0;
+}
+.darken-image{
+	border-radius: 20px; 
+	position: relative;
+    display: inline-block;
+    background: black;
+    padding: 0;
+    width: 80%;
+}
+.darken-image img{
+	border-radius: 20px; 
+	transition: opacity 1s linear;
+}
+.darken-image:hover img{
+	opacity: 0.5;
+}
+.darken-image a {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 16px;
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+.darken-image:hover a {
+	opacity: 1;
+}
+.card-image{
+	padding: 4px;
+}
+.image-hover{
+	background-position: center;
+	background-size: cover;
+	width:100%;
+	overflow:hidden	;
+	height:240px !important;
+}
+.card{
+	width:90%;
+	background-color:#fff;
+	border: 2px solid #E6E6E6;
+	/*min-height:400px!important;*/
+	padding-bottom:24px;
+	text-align: center;
+	margin: 8px auto;
+	box-shadow: none;
+	box-shadow: 0 2px 9px 0 rgba(0,0,0,0.06);
+}
+.short-desc h4 a{
+	font-family: "NunitosansSB"!important;
+}
+.view-btn{
+	margin-top:8px;
+}
+.container{
+  min-width: 80% !important;
+}
+
+.card:hover{
+box-shadow: 0 4px 32px 0 rgba(0,0,0,0.08);
+cursor: pointer;
+transition: all 0.2s;
+}

@@ -1,0 +1,181 @@
+/*CSS of work page images starts here*/
+
+.work-page-images-collective-background
+{
+    display: table;
+    margin: auto;
+    padding: 0;
+    box-shadow: 0 0 12px #ccc;
+}
+
+.work-page-images
+{
+    margin-top: 48px;
+}
+
+
+@media only screen and (min-width: 1400px)
+{
+    .work-page-images
+    {
+        margin-top: 108px;
+    }
+}
+@media only screen and (min-width: 993px) 
+{
+    .container {
+        width:80%
+    }
+}
+
+.work-page-images .container-fluid
+{
+    padding: 0;
+}
+
+.work-page-images img
+{
+    margin: 0;
+    width: 100%;
+}
+
+p.work-page-images-paragraph
+{
+    text-align: center;
+}
+
+/*CSS of work page images ends here*/
+
+
+
+
+
+/*CSS of Work stories' pages starts here*/
+
+.work-story-cover-div
+{
+    margin-top: 48px;
+}
+
+.work-story-cover-div .work-story-title-container
+{
+    margin-top: -120px;
+}
+
+.work-story-cover-div  .work-story-title-container h1
+{
+    color: #fff;
+}
+
+.work-story-cover
+{
+    width: 100%;
+}
+
+.work-story-container
+{
+    margin-top: 72px;
+    max-width: 720px;
+    margin-bottom: 36px;
+}
+
+.work-story h1 
+{
+    margin-top: 36px;
+    margin-bottom: -12px;
+    font-weight: bold;
+    color: #243538;
+    line-height: 1.2;
+}
+
+.work-story-container h2 
+{
+    margin-top: 24px;
+    color: #cacaca;
+    line-height: 1.5;
+}
+
+.work-story-container h3 
+{
+    margin-top: 24px;
+    margin-bottom: -18px;
+    color: #243538;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+.work-story-container p 
+{
+    margin: 24px auto 36px auto;
+    font-size: 20px;
+/*
+    font-weight: lighter;
+    */  
+    line-height: 1.8;
+    color: #555;
+}
+
+.work-story-container .highlighted-text
+{
+    max-width: 480px;
+    border-left: 1px solid #ff8d00;
+    margin: 48px auto;
+    padding: 0 24px;
+    font-size: 20px;
+    font-style: italic;
+    color: #8a8a8a;
+}
+
+.work-story-container .image
+{
+    margin: 48px auto;
+    display: table;
+}
+
+.work-story-container .image img
+{
+    width: auto;
+    max-width: 100%;
+}
+
+.work-story-container .image .caption
+{
+    text-align: center;
+    color: #cacaca;
+    margin: 12px auto;
+    font-size: 14px;
+}
+
+.work-story-container img.left-aligned
+{
+    margin-left: 0;
+}
+
+
+p.end-of-story
+{
+    text-align: center;
+    color: #cacaca;
+    font-size: 60px;
+    font-weight: lighter;
+    margin: 0 auto 48px auto;
+}
+
+.card-image-top a img{
+    width: 100%;
+}
+/*CSS of Works' pages ends here*/
+.detailed-title h2{
+    font-family: "Playfair";
+}
+
+.blog {
+  width: 100%;
+  max-width:1920px;
+  line-height :1.8;
+}
+
+.w100 {
+  width: 100%;
+}

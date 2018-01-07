@@ -1,0 +1,228 @@
+
+<!doctype html>
+
+
+<html>
+<head>
+<meta property="og:title" content="Information Management Group" />
+<meta name="description" content="We are a student group, which cultivates technical innovation and drives the development of software systems and niche applications which empathize with the residents of IIT Roorkee."/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107912406-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-107912406-1');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<title>
+Information Management Group
+</title>
+
+
+
+
+<meta name="twitter:card" content="NoticeBoard">
+<meta name="title" property="og:title" content="NoticeBoard">
+<meta name="thumbnail" property="og:image" content="http://img.channeli.in/media/img_website/projects/noticeboard.jpg"/>
+
+
+<link rel="shortcut icon" href="/static/images/img_website/favicon.ico">
+<link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
+<link rel="stylesheet" href="/static/font-awesome-4.1.0/css/font-awesome.min.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+<link rel="stylesheet" href="/static//materialize/css/materialize.min.css">
+<link rel="stylesheet" href="/static/css/img_website/base.css" />
+
+<link rel="stylesheet" href="/static/css/img_website/detailed_blog.css">
+
+
+<script src="/static/jquery/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+var a = 50;
+var b = 1;
+$(document).scroll(function(){
+    if($(this).scrollTop() > a)
+    {
+    $('nav').addClass('on-scroll');
+    $('.navbar-fixed').addClass('on-scroll-content');
+    $('.nav-wrapper').css({"border-color":"2px #e7e7e7"});
+    } else {
+    $('nav').removeClass('on-scroll');
+    $('.navbar-fixed').removeClass('on-scroll-content');
+    }
+    });</script>
+
+
+
+<script src="/static/materialize/js/materialize.min.js"></script>
+
+<script>
+  function proceed(button)
+  {
+    if(button.value == 'Published')
+    {
+      button.value = 'Unpublished';
+      button.innerHTML = 'Publish';
+      window.open("/project/unpublish/NoticeBoard","_self");
+    }
+    else
+    {
+      button.value = 'Published';
+      button.innerHTML = 'Unpublish';
+      window.open("/project/publish/NoticeBoard","_self");
+    }
+  }
+  function nex()
+  {
+   window.open("/project/edit/NoticeBoard","_self");
+ }
+ function member()
+ {
+   window.open("/project/add/members/NoticeBoard","_self");
+ }
+</script>
+
+</head>
+<body>
+
+
+<!-- HEADER -->
+<div class="navbar-fixed">
+<nav class = "top-nav navigation">
+<div class="nav-wrapper fixed-navbar">
+<a href="/" class="black-text logo"><img src = "/static/images/imglogo.png"></a>
+<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" style = "color : #000">menu</i></a>
+
+<ul class="side-nav" id="mobile-demo">
+<li><a class = "" id = "blog" href="/blog">BLOGS</a></li>
+<li><a class = "active" id = "project" href="/project">PROJECTS</a></li>
+<li><a class = "" id = "team" href="/team">TEAM</a></li>
+<!-- <li><a class = "" id = "alumni" href="/alumni">ALUMNI</a></li>-->
+</ul>
+<ul class="nav-tabs right hide-on-med-and-down">
+<li><a class = "" id = "blog" href="/blog">BLOGS</a></li>
+<li><a class = "active" id = "project" href="/project">PROJECTS</a></li>
+<li><a class = "" id = "team" href="/team">TEAM</a></li>
+<!-- <li><a class = "" id = "alumni" href="/alumni">ALUMNI</a></li>-->
+
+</ul>
+</div>
+</nav>
+</div>
+
+
+
+<body>
+<div id="fb-root"></div>
+
+
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=1789391281347726";
+              fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <div class="m-t-a"></div>
+  <div class="row blog">
+    <div class="col s12 m8 l8 offset-l2 offset-m2 detailed-title">
+      <h2>NoticeBoard</h2>
+    </div>
+    <div class="col s12 m8 l8 offset-l2 offset-m2" style = "color:grey">
+     <span style = "font-family:NunitosansB"></span>
+    </div>
+    <div class="col s12 m8 l8 offset-l2 offset-m2">
+    </div>
+    <div class="col s12 m8 l8 offset-l2 offset-m2">
+  <!--    <b>MEMBERS:</b><br>
+      
+      Vipul Gupta<br>
+      -->
+      <p><strong><span>Notice Board is an app on Channel i where all the notices related IIT Roorkee are put up.&nbsp;</span></strong><strong><span>These notices are uploaded by the concerned authorities. Whether it is something related to Placement/ Internship or an academic reform, Notice board is the first place where the information is shared. A lot of paperwork has been reduced since the launch of notice board. This is one of the most vital applications of IIT Roorkee.</span></strong></p><p dir="ltr"><strong><img class="fr-dib fr-fil fr-img-move" src="/media/uploads/froala_editor/images/image1.png" style="width: 100%;"></strong><br></p><p dir="ltr">You can subscribe to the some specific notices for which you wish to receive email notifications.</p><p><strong><span><img class="fr-dib fr-fil" src="/media/uploads/froala_editor/images/image3.png" style="width: 100%;"></span></strong><br></p><p><strong><span>You can star notices which makes the task of finding an important notice easy in the future.&nbsp;</span></strong></p><p><strong><span><img class="fr-dib fr-fil" src="/media/uploads/froala_editor/images/image4.png" style="width: 100%;"></span></strong><br></p><p><strong><span><strong><span>You can select a particular category and find out all the notices related to it.&nbsp;</span></strong></span></strong></p><p><strong><span><img class="fr-dib fr-fil" src="/media/uploads/froala_editor/images/image2.png" style="width: 100%;"></span></strong><br></p><p><strong><span><strong><span>There is an Android app available for NoticeBoard which works on the Internet. This makes the notice board easily available to everyone in pockets.</span></strong></span></strong></p><p><br></p>
+    </div>
+        <div class="col s12 m8 l8 offset-l2 offset-m2">
+<div class="fb-comments" data-href="http://img.channeli.in/NoticeBoard" data-numposts="5"></div>
+      
+    </div>
+  </div>
+</body>
+
+<div class = "footer-fix"></div>
+<div class='footer-fixed'></div>
+<footer class="page-footer">
+<div class="container">
+<div class="row">
+<div class="col l7 s12 footer-resp">
+<h5 class="white-text">
+<div class="footer-text">
+Contact Us
+</div>
+</h5>
+<div class="footer-text-content"> Ground floor, Institute Computer Centre,<br> IIT Roorkee, Roorkee, <br> Uttrakhand, India- 247667</div>
+<div class="footer-links c-secondary">
+<p><i class="fa fa-envelope-o" aria-hidden="true"></i> <span class="f-link">img@iitr.ac.in</span></p>
+<p><i class="fa fa-phone" aria-hidden="true"></i> <span class="f-link">01332 284 521</span></p>
+</div>
+<div class="footer-social">
+<a href="https://www.facebook.com/IMGIITRoorkee/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+<a href="https://github.com/imgiitroorkee/"><i class="fa fa-github" aria-hidden="true"></i></a>
+<a href="https://twitter.com/img_iitr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+</div>
+</div>
+<div class="col l5 s12 footer-resp">
+<h5 class="white-text">
+<div class="footer-text">
+About
+</div>
+</h5>
+<div class="footer-text-content">
+As the institute evolves, so does IMG. We are a student group, which cultivates technical innovation and drives the development of software systems and niche applications which empathize with the residents of IIT Roorkee, making their digital stay as seamless as possible. We survive on action and results, getting it done faster, better and more efficiently, with one goal in mind: Simplifying the business of college life.
+</div>
+<p class="grey-text text-lighten-4"></p>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<div class="container">
+<div class="left">
+<span style='margin-right: 8px'>© 2018 Information Management Group</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+var cur_url = window.location.href;
+var index = cur_url.indexOf("img");
+cur_url = cur_url.substring(index);
+index = cur_url.indexOf("/");
+cur_url = cur_url.substring(index+1);
+index = cur_url.indexOf("/");
+var cur_tab = cur_url.substring(0,index);
+$(document).ready(function(){
+    $("#"+cur_tab).addClass("active_bar");
+    $("<hr class='active_hr'>").insertAfter($("#"+cur_tab));
+    $(".button-collapse").sideNav({
+edge : 'right',
+menuWidth: 200,
+});
+    var h =$(".page-footer").height();
+    $(".footer-fixed").css("height",h+"px");
+    })
+</script>
+</body>
+</html>
+
