@@ -186,20 +186,24 @@ $(document).scroll(function(){
 
 
 
-      
-      
       <div class="row buttons-div">
-        <div class="col s12 m12 l12">
+        <div class="col s12 m6 l6 button-margin">
+          <a class="view-blogs custom-btn" onclick="Materialize.showStaggeredList('#staggered-blog')">My Blogs</a>
+        </div>
+        <div class="col s12 m6 l6 button-margin">
           <a class="view-projects custom-btn" onclick="Materialize.showStaggeredList('#staggered-project')">My Projects</a>
         </div>
       </div>
-      
+
 
 
 
       
       <div class="blog-list">
         <ol id="staggered-blog">
+          
+          <li><a  href="/blog/Getting-started-with-Google-Summer-of-Code" class='content-title'>Getting started with Google Summer of Code</a></li>
+          <br>
           
         </ol>
       </div>
